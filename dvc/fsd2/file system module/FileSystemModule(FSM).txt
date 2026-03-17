@@ -1,0 +1,37 @@
+file system module in node.js : // to use and manipulate large data recieved from server side like data 
+1. synchronous = also called blocking = it will execute the task one by one ...
+2. async = also called non-blocking = it will execute the task in parallel ...
+
+
+synchronous mate ni Syntax :::
+
+// to use "any"  modules = 
+variable_name.require("module_name")
+
+// to create or write in a file =
+variable_name.writeFileSync( file_name, data) // note data should always be in string.... also if file is not made or file doesnt exists then, this function will "create" a new file itself....
+
+// to display the data from txt file on console -
+variable_name.readFileSync("file_name.txt", "utf-8")
+
+// to rename the existing file = 
+variable_name.renameSync (old_file_name, new_file_name ) // should be written in str.
+
+// to copy data from source file to another file =
+variable_name.copyFileSync (src_file, new file_name)
+
+// to delete the whole file.
+variable_name.unlinkSync("file_name.txt")
+
+// to create a folder (directory) = 
+fs.mkdirSync(folder_name)
+
+
+
+ASYNC syntax : 
+ 
+// to write in a file :
+fs.writeFile(file_name, file_data , callback function) // note you can add any function like error function or anonymous or custom function but it should contain a dunction as in parameter.
+
+// to append the data into a file..
+fs.appendFile( file_name, data, callback function)

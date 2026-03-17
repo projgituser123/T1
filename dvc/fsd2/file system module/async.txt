@@ -1,0 +1,3 @@
+this is data for async function
+appending data line1 
+appending data line2
