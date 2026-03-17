@@ -1,0 +1,21 @@
+async functions :
+
+// to rename the file : 
+fs.rename( old file, new file, callback functions)
+
+// to copy the file = 
+fs.copyFile(old file, new file, callback functions)
+
+// to unlink or to delete the file for clearing the directory = 
+fs.unlink(file name, callback functions)
+
+// to make the directory, this will create the empty folder : 
+fs.mkdir(folder name, callback functions) 
+
+// to delete the empty folder : 
+fs.rmdire(empty folder name, callback functions)
+
+// to read the file :
+fs.readFile(filename, "utf-8" in str, callback functions (err, data from txt))
+Note : callback functions of error also includes the "data" parameter as if any error in data occurs it will showed in the console. And if you done write utf-8 parameter then you have to write data.toString() in console.log 
+

@@ -1,0 +1,6 @@
+path moudule..
+
+// basename() = fetch the filename + extension
+// dirname() = path of file (folder)
+// extname () = gives the extension of file
+// parse() = object of the data's in form of keys and values. like root, dir, base, ext and name..
