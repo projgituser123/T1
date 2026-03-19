@@ -1,0 +1,25 @@
+Event modules : 
+
+-we will make a custom event just like onclick(), which was pre-defined even but we will make our own event and use it according the question asked..
+- you cannot emit the event before binding it with the functions..
+- alternate method of ee.on() is = ee.addListener()... both have same syntax and working..
+- you can also fire anonymous functions..
+
+// to use an event module:
+e=require("events")
+ee = new e() 
+
+// to create an events and bind it with event handlers or functions or event listener :
+ee.on(even name, handlers)
+
+// to trigger or fire the event : 
+ee.emit(event name)
+
+// to remove or unbind the event or listener or event handler : 
+ee.removeListner(event name, listner)
+
+// to remove all the event listner : or we can say to delete the whole event : 
+ee.removeAllListeners(event name)
+
+// to count how many listners or functions are binded with the event : 
+let variable_name = ee.listnerCount(event name)
