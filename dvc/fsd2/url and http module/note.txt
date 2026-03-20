@@ -1,0 +1,20 @@
+url module :
+
+-it is used to fetch the particular details of the actual url in small small parts...
+-url is in string form in the website but it is actually in the form of json objects..
+
+// to parse the url which is string to 
+var q = url.parse(u, true) // true because if you want the query part of url in object and not in string so that you can use the values from keys of the query
+
+http module :
+
+-provides the env for server to listen requests...
+
+// to create a server :
+r.createServer(function (request, response)=>{
+    res.write(str datatype)  //to print the browser in server side... 
+    res.end() // compulsory to write this LOC, to end or to stop the rendering response on browser. if you dont write this LOC then the localhost will load infintely... you can wirte some string inside res.end()
+    
+    ------code-------
+
+}).listen(port number of 4 digit of localhost)
