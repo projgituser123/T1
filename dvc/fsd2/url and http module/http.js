@@ -1,9 +1,14 @@
-let http = require("http")
-http.createServer(function(req,res){
-    res.write("hello from node js...")
-    res.write("\nresponse is displayed here..")
-    //res.end();
-    res.end("end note")
-    res.end()
-   // res.write("string after ending the response...") // this will not print as the response is ended before this LOC, as browser's door is closed...and it will give error..
-}).listen(8000) 
+
+var httpserver = require("http")
+httpserver.createServer(function(req,res){
+    /*
+    res.writeHead(200, {"Content-type" : "text/html"});
+    res.write("greeting\n");
+    res.write("<h1>hello from node js http...</h1>");
+   // res.write("greeting\n"); // if res.writeHead () is not written then the output gets messed up.
+    res.end();
+    */
+
+    console.log(req)
+    res.end(req.url) // open browser and write somethin in url with a slash..
+}).listen(8008)
